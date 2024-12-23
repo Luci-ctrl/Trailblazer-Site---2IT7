@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../navSpecific.css" />
+    <title>Navigate to AB2</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="menu">
+          <h2>Other Classrooms</h2>
+          <ul>
+            <li>
+              <a href="../index.html#Navigate" class="classroom-card">
+                <h2>Choose Other Building</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB2.html" class="classroom-card">
+                <h2>AB2</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB4.html" class="classroom-card">
+                <h2>AB4</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB5.html" class="classroom-card">
+                <h2>AB5</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB6.html" class="classroom-card">
+                <h2>AB6</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB7.html" class="classroom-card">
+                <h2>AB7</h2>
+              </a>
+            </li>
+            <li>
+              <a href="AB8.html" class="classroom-card">
+                <h2>AB8</h2>
+              </a>
+            </li>
+          </ul>
+          <h2>Other Floors</h2>
+          <ul>
+            <li><a href="../AB-Rooms/Lazaro.html">Ground Floor</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Navigate to AB2</h1>
+        <section class="room-details">
+          <h2>Room Details</h2>
+          <div class="map">
+            <img src="../images/LowerG/AB2.png" alt="Map to Room 101" />
+            <p>Follow the arrows to reach room AB2!</p>
+          </div>
+        </section>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+            <img src="../images/AB/AB-Entrance.jpg" />
+            <div class="text">Entrance</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="../images/AB/Lazaro-Pic.jpg" />
+            <div class="text">Turn Left</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="../images/AB/H1L.jpg" />
+            <div class="text">Turn Right</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="../images/AB/LG-ENT.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="../images/AB/LG1.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="../images/AB/LG2.jpg" />
+            <div class="text">Turn Right</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="../images/AB/LGR.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="../images/AB/AB2.jpg" />
+            <div class="text">You've arrived!</div>
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</html>

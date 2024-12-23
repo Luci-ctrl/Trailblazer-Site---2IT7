@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="navBar.css" />
+    <link rel="stylesheet" type="text/css" href="indexStyle.css" />
+
+    <title>Trailblazer</title>
+  </head>
+
+  <body>
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <a>
+            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          </a>
+          <a href="index.html#Navigate" class="nav-hover">
+            <li>Navigate</li>
+          </a>
+          <a href="#AboutUs" class="nav-hover">
+            <li>About Us</li>
+          </a>
+          <a href="#Contact" class="nav-hover">
+            <li>Contact</li>
+          </a>
+        </ul>
+
+        <ul class="main">
+          <a href="index.html">
+            <li class="logo">
+              <img
+                src="images/site--logo.png"
+                alt="TRAILBLAZERS"
+                width="130px"
+              />
+            </li>
+          </a>
+          <a href="index.html#Navigate" class="nav-hover">
+            <li class="hideOnMobile">Navigate</li>
+          </a>
+          <a href="#AboutUs" class="nav-hover">
+            <li class="hideOnMobile">About Us</li>
+          </a>
+          <a href="#Contact" class="nav-hover">
+            <li class="hideOnMobile">Contact</li>
+          </a>
+          <a href="#"><li  class="menu-icon" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li></a>
+        </ul>
+      </nav>
+    </header>
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+    <section id="Home">
+      <div>
+        <h2 class="type">Navigate with <em>Ease!</em></h2>
+        <p>
+          We aim to guide the scholars of the City College of Calamba into their
+          respective classroom based on their desired room.
+        </p>
+        <a href="index.html#Navigate"> START YOUR JOURNEY </a>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+    <hr />
+    <section id="Navigate">
+      <div class="info-Nav">
+        <h1>NAVIGATE</h1>
+        <h3>Choose a building to Navigate!</h3>
+        <p>
+          The City College of Calamba has three
+          main buildings -- Admin Building, Rizal Building, and JMC Building --
+          where students are taught and trained to be a global professional. CCC
+          dedicates these buildings to their cherished scholars who are the
+          Nation's hope! These buildings are full of love, joy, and hope.
+        </p>
+      </div>
+      <div class="NavWrapper">
+        <div class="NavContainer">
+          <div class="buildings">
+            <img src="images/ABBuilding.png" alt="" />
+            <div class="NavInfo">
+              <h2>ADMIN BUILDING</h2>
+              <p>
+                The<b> Admin Building </b>serves as the central hub for the
+                institution’s administrative operations. It houses key personnel
+                and services responsible for running the school smoothly and
+                supporting both students and staff.
+              </p>
+              <button data-modal-target="#GModal" class="navBtn">
+                Ground Floor
+              </button>
+              <button data-modal-target="#LGModal" class="navBtn">
+                Lower Ground
+              </button>
+              <button href="#" class="navBtn1">
+                Directions for the Building
+              </button>
+            </div>
+          </div>
+          <div class="buildings">
+            <img src="images/RizalBuilding.jpg" alt="" />
+            <div class="NavInfo">
+              <h2>RIZAL BUILDING</h2>
+              <p>
+                A school building named after<b> Jose Rizal</b>—the national
+                hero of the Philippines—carries profound symbolic meaning.
+                Rizal, known for his advocacy for education, reform, and
+                freedom, embodies values that are crucial in any academic
+                institution.
+              </p>
+              <button data-modal-target="#RModal" class="navBtn">
+                Enter Building
+              </button>
+              <button href="#" class="navBtn1">
+                Directions for the Building
+              </button>
+            </div>
+          </div>
+          <div class="buildings">
+            <img src="images/JMCBuilding.png" alt="" />
+            <div class="NavInfo">
+              <h2>JMC BUILDING</h2>
+              <p>
+                A school building named after a <b>former mayor</b> reflects
+                more than just a gesture of recognition—it conveys appreciation
+                for local leadership and serves as a lasting symbol of civic
+                contributions.
+              </p>
+              <button data-modal-target="#FJMCModal" class="navBtn">
+                Enter 1JMC
+              </button>
+              <button data-modal-target="#SJMCModal" class="navBtn">
+                Enter 2JMC
+              </button>
+              <button data-modal-target="#TJMCModal" class="navBtn">
+                Enter 3JMC
+              </button>
+              <button href="#" class="navBtn1">
+                Directions for the Building
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <h1>Navigate the School</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.7059444635674!2d121.16506937517894!3d14.211988486229655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd622b2e539df1%3A0x9102ac773e8a0b99!2sCity%20College%20of%20Calamba!5e0!3m2!1sen!2sph!4v1732029888946!5m2!1sen!2sph"
+          width="80%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <hr />
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+    <section class="team-section" id="AboutUs">
+      <div class="info-site">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Trailblazer, your go-to guide for navigating our school
+          campus with ease. Whether you're a student attending class, a teacher
+          heading to your next lecture, or a visitor trying to find a specific
+          room, we're here to help you get there quickly and without confusion.
+          <br /><br />
+          This Team is composed of City College of Calamba Students dedicated to
+          make a simple navigating system in order to help new students navigate
+          and locate their desired classrooms. The site was made as a partial
+          fulfillment for the course Web Design and Programming.
+        </p>
+      </div>
+
+      <div class="ccc-Cont">
+        <div class="box">
+          <h1>OUR MISSION</h1>
+          <div class="mission-content">
+            <p>
+              To provide a user-friendly platform that helps students, faculty,
+              teachers, visitors, and parents easily navigate school campuses by
+              offering accurate, real-time guidance to their desired classrooms.
+              We strive to reduce confusion and time spent searching for
+              locations, enhancing the overall school experience for all users.
+              Through this service, we aim to support academic success, improve
+              campus efficiency, and foster a welcoming environment for
+              everyone.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1>OUR VISION</h1>
+          <div class="vision-content">
+            <p>
+              Be the leading digital tool for school navigation, offering a
+              comprehensive and accessible solution that meets the needs of all
+              campus visitors. We aspire to create a seamless experience where
+              students, faculty, and visitors can confidently find their way
+              around, reducing stress and improving overall satisfaction.
+              Ultimately, we aim to contribute to a more organized and efficient
+              school environment that prioritizes ease of use and inclusivity
+              for all.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-container">
+        <div class="team-member">
+          <img src="images/ArielWhiteBG.jpg" alt="Ariel's Pic" />
+          <h3>Hi, I'm Ariel</h3>
+          <p class="role">Leader and Lead Progammer</p>
+          <p>
+            I've been the one leading the team and also the one who handles the
+            programming aspects
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/xyell.vill"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="mailto:avpasuquin@ccc.edu.ph"
+              ><img src="images/google-icon.png" alt="Google"
+            /></a>
+          </div>
+          <div class="Resume">
+            <a href="Pasuquin.html">
+              <button><b>View Resume</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Palma.jpg" alt="Arian's Pic" />
+          <h3>Hi, I'm Arian</h3>
+          <p class="role">Programmer and Photographer</p>
+          <p>
+            I handle most medias that you see on our page, I've personally
+            photographed them.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/arianfelicity.palma"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="mailto:aspalma@ccc.edu.ph"
+              ><img src="images/google-icon.png" alt="Google"
+            /></a>
+          </div>
+          <div class="Resume">
+            <a href="Palma.html">
+              <button><b>View Resume</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Javier.jpeg" alt="Ken's Pic" />
+          <h3>Hi, I'm Ken</h3>
+          <p class="role">UI Designer</p>
+          <p>
+            I'm the one handling layout designs, content positions and the
+            overall appearance of the webpage.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ken.javier.10.26"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="mailto:krjavier@ccc.edu.ph"
+              ><img src="images/google-icon.png" alt="Google"
+            /></a>
+          </div>
+          <div class="Resume">
+            <a href="Javier.html">
+              <button><b>View Resume</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Daduya.jpg" alt="Raphael's Pic" />
+          <h3>Hi, I'm Raphael</h3>
+          <p class="role">Programmer and Content Provider</p>
+          <p>I help on all aspects and the Jack of All Trades of the team.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/raphael.daduya.5">
+              <img src="images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="mailto:rjdaduya@ccc.edu.ph"
+              ><img src="images/google-icon.png" alt="Google"
+            /></a>
+          </div>
+          <div class="Resume">
+            <a href="Lingayo.html">
+              <button><b>View Resume</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Lingayo.jpg" alt="Erich's Pic" />
+          <h3>Hi, I'm Erich</h3>
+          <p class="role">Programmer and Content Provider</p>
+          <p>I help on all aspects and the Jack of All Trades of the team.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/erich.lingayo">
+              <img src="images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="mailto:erichlingayo417@gmail.com"
+              ><img src="images/google-icon.png" alt="Google"
+            /></a>
+          </div>
+          <div class="Resume">
+            <a href="Lingayo.html">
+              <button><b>View Resume</b></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+    <hr />
+    <section id="Contact">
+      <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:pasuquinjrariel@gmail.com"
+              >pasuquinjrariel@gmail.com</a
+            >
+          </p>
+          <p>Phone: <a href="tel:09392411300">09392411300</a></p>
+          <p>Address: Calamba City, Laguna</p>
+        </div>
+
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <details>
+            <summary>What is the purpose of this site?</summary>
+            <p>We aim to guide students of CCC into their respective rooms.</p>
+          </details>
+
+          <details>
+            <summary>Why was this site created?</summary>
+            <p>
+              This was created as a partial fulfillment for our major subject
+              Web Design by the students of CCC.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is there another way to contact you?</summary>
+            <p>You can navigate to the contact info on the About Us page.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <button id="backToTop">&#8679; Top</button>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <footer>
+      <p>&copy; 2024 CCC Navigation Site</p>
+    </footer>
+
+    <!-- Modals ----------------------------------------------------------------------------------------------------------->
+
+    <!-- AB Ground -->
+    <div id="GModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>Ground Floor</h1>
+          <p>Explore the classrooms available in Admin Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="AB-Rooms/Lazaro.html" class="classroom-card">
+              <h2>Lazaro Hall</h2>
+            </a>
+            <a href="AB-Rooms/TestingRoom.html" class="classroom-card">
+              <h2>Testing Room</h2>
+            </a>
+            <a href="AB-Rooms/Guidance.html" class="classroom-card">
+              <h2>Guidance Office</h2>
+            </a>
+            <a href="AB-Rooms/Speech.html" class="classroom-card">
+              <h2>Speech Lab</h2>
+            </a>
+            <a href="AB-Rooms/Faculty.html" class="classroom-card">
+              <h2>Faculty Room</h2>
+            </a>
+            <a href="AB-Rooms/TR-101.html" class="classroom-card">
+              <h2>Testing Room 101</h2>
+            </a>
+            <a href="AB-Rooms/Admin.html" class="classroom-card">
+              <h2>Administrative/ Staff Room</h2>
+            </a>
+            <a href="AB-Rooms/MISD.html" class="classroom-card">
+              <h2>MISD</h2>
+            </a>
+            <a href="AB-Rooms/Dental.html" class="classroom-card">
+              <h2>Dental Clinic</h2>
+            </a>
+            <a href="AB-Rooms/Cashier.html" class="classroom-card">
+              <h2>Cashier's Office</h2>
+            </a>
+            <a href="AB-Rooms/Registrar.html" class="classroom-card">
+              <h2>Registrar's Office</h2>
+            </a>
+            <a href="AB-Rooms/DBE.html" class="classroom-card">
+              <h2>DBE Office</h2>
+            </a>
+            <a href="AB-Rooms/Science.html" class="classroom-card">
+              <h2>Science Lecture Room</h2>
+            </a>
+            <a href="AB-Rooms/Chem.html" class="classroom-card">
+              <h2>Chemistry Lab</h2>
+            </a>
+            <a href="AB-Rooms/Physics.html" class="classroom-card">
+              <h2>Physics Lab</h2>
+            </a>
+            <a href="AB-Rooms/Exit.html" class="classroom-card">
+              <h2>Exit</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ab UG -->
+    <div id="LGModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>Lower Ground</h1>
+          <p>Explore the classrooms available in Admin Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="AB-LG/AB2.html" class="classroom-card">
+              <h2>AB2</h2>
+            </a>
+            <a href="AB-LG/AB4.html" class="classroom-card">
+              <h2>AB4</h2>
+            </a>
+            <a href="AB-LG/AB5.html" class="classroom-card">
+              <h2>AB5</h2>
+            </a>
+            <a href="AB-LG/AB6.html" class="classroom-card">
+              <h2>AB6</h2>
+            </a>
+            <a href="AB-LG/AB7.html" class="classroom-card">
+              <h2>AB7</h2>
+            </a>
+            <a href="AB-LG/AB8.html" class="classroom-card">
+              <h2>AB8</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rizal -->
+    <div id="RModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>Rizal</h1>
+          <p>Explore the classrooms available in Rizal Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="R-Rooms/R1.html" class="classroom-card">
+              <h2>R1</h2>
+            </a>
+            <a href="R-Rooms/R2.html" class="classroom-card">
+              <h2>R2</h2>
+            </a>
+            <a href="R-Rooms/R3.html" class="classroom-card">
+              <h2>R3</h2>
+            </a>
+            <a href="R-Rooms/R4.html" class="classroom-card">
+              <h2>R4</h2>
+            </a>
+            <a href="R-Rooms/R5.html" class="classroom-card">
+              <h2>R5</h2>
+            </a>
+            <a href="R-Rooms/R6.html" class="classroom-card">
+              <h2>R6</h2>
+            </a>
+            <a href="R-Rooms/R7.html" class="classroom-card">
+              <h2>R7</h2>
+            </a>
+            <a href="R-Rooms/R8.html" class="classroom-card">
+              <h2>R8</h2>
+            </a>
+            <a href="R-Rooms/R9.html" class="classroom-card">
+              <h2>R9</h2>
+            </a>
+            <a href="R-Rooms/R10.html" class="classroom-card">
+              <h2>R10</h2>
+            </a>
+            <a href="R-Rooms/R11.html" class="classroom-card">
+              <h2>R11</h2>
+            </a>
+            <a href="R-Rooms/R12.html" class="classroom-card">
+              <h2>R12</h2>
+            </a>
+            <a href="R-Rooms/R13.html" class="classroom-card">
+              <h2>R13</h2>
+            </a>
+            <a href="R-Rooms/R14.html" class="classroom-card">
+              <h2>R14</h2>
+            </a>
+            <a href="R-Rooms/RConference.html" class="classroom-card">
+              <h2>Rizal Conference Room</h2>
+            </a>
+            <a href="R-Rooms/RFaculty.html" class="classroom-card">
+              <h2>Rizal Faculty Room</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1JMC -->
+    <div id="FJMCModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>First Floor JMC</h1>
+          <p>Explore the classrooms available in JMC Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="/1JMC/1-CL1.html" class="classroom-card">
+              <h2>1-CL1</h2>
+            </a>
+            <a href="/1JMC/1-CL2.html" class="classroom-card">
+              <h2>1-CL2</h2>
+            </a>
+            <a href="/1JMC/1-CL3.html" class="classroom-card">
+              <h2>1-CL3</h2>
+            </a>
+            <a href="/1JMC/1-JMC1.html" class="classroom-card">
+              <h2>1-JMC1</h2>
+            </a>
+            <a href="/1JMC/1-JMC2.html" class="classroom-card">
+              <h2>1-JMC2</h2>
+            </a>
+            <a href="/1JMC/1exit.html" class="classroom-card">
+              <h2>EXIT</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2JMC -->
+    <div id="SJMCModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>Second Floor JMC</h1>
+          <p>Explore the classrooms available in JMC Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="/2JMC/Chief.html" class="classroom-card">
+              <h2>Chief Librarian Office</h2>
+            </a>
+            <a href="/2JMC/2-JMC3.html" class="classroom-card">
+              <h2>2-JMC3</h2>
+            </a>
+            <a href="/2JMC/2-JMC4.html" class="classroom-card">
+              <h2>2-JMC4</h2>
+            </a>
+            <a href="/2JMC/2-JMC5.html" class="classroom-card">
+              <h2>2-JMC5</h2>
+            </a>
+            <a href="/2JMC/2-JMC6.html" class="classroom-card">
+              <h2>2-JMC6</h2>
+            </a>
+            <a href="/2JMC/LIRC.html" class="classroom-card">
+              <h2>Library (LIRC)</h2>
+            </a>
+            <a href="/2JMC/2frst.html" class="classroom-card">
+              <h2>First FLoor</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3JMC -->
+    <div id="TJMCModal" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h1>Third Floor JMC</h1>
+          <p>Explore the classrooms available in JMC Building</p>
+        </div>
+        <div data-close-button class="close-btn">&times;</div>
+      </div>
+      <div class="modal-content">
+        <div class="floor-container">
+          <div class="classroom-list">
+            <a href="/3JMC/3-JMC7.html" class="classroom-card">
+              <h2>3-JMC7</h2>
+            </a>
+            <a href="/3JMC/3-JMC8.html" class="classroom-card">
+              <h2>3-JMC8</h2>
+            </a>
+            <a href="/3JMC/3-JMC9.html" class="classroom-card">
+              <h2>3-JMC9</h2>
+            </a>
+            <a href="/3JMC/3-JMC10.html" class="classroom-card">
+              <h2>3-JMC10</h2>
+            </a>
+            <a href="/3JMC/3-JMC11.html" class="classroom-card">
+              <h2>3-JMC11</h2>
+            </a>
+            <a href="/3JMC/3-JMC12.html" class="classroom-card">
+              <h2>3-JMC12</h2>
+            </a>
+            <a href="/3JMC/AVR.html" class="classroom-card">
+              <h2>AVR</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+  <script src="scripts.js"></script>
+</html>

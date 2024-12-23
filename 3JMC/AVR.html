@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../navSpecific.css" />
+    <title>Navigate to AVR</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="menu">
+          <h2>Other Classrooms</h2>
+          <ul>
+            <li>
+              <a href="../index.html#Navigate" class="classroom-card">
+                <h2>Choose Other Building</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC7.html" class="classroom-card">
+                <h2>3-JMC7</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC8.html" class="classroom-card">
+                <h2>3-JMC8</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC9.html" class="classroom-card">
+                <h2>3-JMC9</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC10.html" class="classroom-card">
+                <h2>3-JMC10</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC11.html" class="classroom-card">
+                <h2>3-JMC11</h2>
+              </a>
+            </li>
+            <li>
+              <a href="3-JMC12.htmll" class="classroom-card">
+                <h2>3-JMC12</h2>
+              </a>
+            </li>
+
+            <li>
+                <a href="AVR.html" class="classroom-card">
+                  <h2>AVR</h2>
+                </a>
+              </li>
+          </ul>
+          <h2>Other Floors</h2>
+          <ul>
+            <li><a href="../1JMC/1-CL1.html">1st Floor</a></li>
+            <li><a href="../2JMC/Chief.html">2nd Floor</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Navigate to AVR</h1>
+        <section class="room-details">
+          <h2>Room Details</h2>
+          <div class="map">
+            <img src="../images/JMC/AVR.png" height="415px" />
+            <p>Follow the arrows to reach room AVR!</p>
+          </div>
+        </section>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="../images/JMC-D/3f/3-ENT.jpg" />
+            <div class="text">Entrance</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="../images/JMC-D/3f/3-JMC12.jpg" />
+            <div class="text">Go Left</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="../images/JMC-D/3f/3H2.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="../images/JMC-D/3f/3H3.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="../images/JMC-D/3f/3-JMC8.jpg" />
+            <div class="text">Go Straight</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="../images/JMC-D/3f/3-JMC7.jpg" />
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="../images/JMC-D/3f/AVR.jpg" />
+            <div class="text">ON YOUR RIGHT!</div>
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</html>
