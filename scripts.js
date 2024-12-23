@@ -16,6 +16,7 @@ const backToTopButton = document.getElementById("backToTop");
     });
 
 
+    // sidebar when on mobile view
 function showSidebar(){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'flex'
@@ -57,7 +58,7 @@ navigateButtons.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     const maps = [
-      "https://maps.app.goo.gl/SFCWYzLDsCUoevDg6", // Replace with actual map links
+      "https://maps.app.goo.gl/SFCWYzLDsCUoevDg6",
         "https://maps.app.goo.gl/KuWFy6TNmpywjnup9",
         "https://maps.app.goo.gl/DTxcxkox4T6id47HA",
     ];
